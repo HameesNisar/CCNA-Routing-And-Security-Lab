@@ -6,9 +6,7 @@
 <hr>
 
 <h2>2. Network Topology</h2>
-<p><i>(A screenshot of the GNS3 topology is placed here.)</i></p>
-<!-- To add your image, upload it to the repository and change the line below -->
-<!-- <img src="Screenshot (4).png" alt="Network Topology"> -->
+<p><i><img width="1554" height="850" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/503b1928-ac3b-4aa7-94e2-771021ed990b" /></i></p>
 
 <hr>
 
@@ -88,17 +86,17 @@
 <pre><code>hostname R1
 !
 interface FastEthernet0/0
- ip address 192.168.1.30 255.255.255.252
- no shutdown
+ip address 192.168.1.30 255.255.255.252
+no shutdown
 !
 interface FastEthernet1/0
- ip address 192.168.1.17 255.255.255.252
- no shutdown
+ip address 192.168.1.17 255.255.255.252
+no shutdown
 !
 router rip
- version 2
- network 192.168.1.0
- no auto-summary
+version 2
+network 192.168.1.0
+no auto-summary
 !
 end
 </code></pre>
@@ -112,25 +110,25 @@ username admin secret MySecurePa$$w0rd
 crypto key generate rsa
 !
 interface FastEthernet0/0
- ip address 192.168.1.18 255.255.255.252
- no shutdown
+ip address 192.168.1.18 255.255.255.252
+no shutdown
 !
 interface FastEthernet1/0
- ip address 192.168.1.21 255.255.255.252
- no shutdown
+ip address 192.168.1.21 255.255.255.252
+no shutdown
 !
 interface FastEthernet1/1
- ip address 192.168.1.25 255.255.255.252
- no shutdown
+ip address 192.168.1.25 255.255.255.252
+no shutdown
 !
 router rip
- version 2
- network 192.168.1.0
- no auto-summary
+version 2
+network 192.168.1.0
+no auto-summary
 !
 line vty 0 4
- login local
- transport input ssh
+login local
+transport input ssh
 !
 end
 </code></pre>
@@ -139,21 +137,21 @@ end
 <pre><code>hostname R3
 !
 interface FastEthernet0/0
- ip address 192.168.1.22 255.255.255.252
- no shutdown
+ip address 192.168.1.22 255.255.255.252
+no shutdown
 !
 interface FastEthernet1/0
- ip address 192.168.1.1 255.255.255.248
- ip access-group 1 in
- no shutdown
+ip address 192.168.1.1 255.255.255.248
+ip access-group 1 in
+no shutdown
 !
 access-list 1 deny host 192.168.1.3
 access-list 1 permit any
 !
 router rip
- version 2
- network 192.168.1.0
- no auto-summary
+version 2
+network 192.168.1.0
+no auto-summary
 !
 end
 </code></pre>
@@ -162,17 +160,17 @@ end
 <pre><code>hostname R4
 !
 interface FastEthernet0/0
- ip address 192.168.1.26 255.255.255.252
- no shutdown
+ip address 192.168.1.26 255.255.255.252
+no shutdown
 !
 interface FastEthernet1/0
- ip address 192.168.1.9 255.255.255.248
- no shutdown
+ip address 192.168.1.9 255.255.255.248
+no shutdown
 !
 router rip
- version 2
- network 192.168.1.0
- no auto-summary
+version 2
+network 192.168.1.0
+no auto-summary
 !
 end
 </code></pre>
