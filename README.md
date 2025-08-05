@@ -133,7 +133,7 @@ transport input ssh
 end
 </code></pre>
 
-<h3>Router R3 (ACL Enabled)</h3>
+<h3>Router R3 (Standard-ACL Enabled)</h3>
 <pre><code>hostname R3
 !
 interface FastEthernet0/0
