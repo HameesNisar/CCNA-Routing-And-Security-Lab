@@ -1,0 +1,37 @@
+Aug 13 11:54:39.062 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 13 11:54:39.062 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50665.
+Aug 13 11:54:39.453 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 13 11:54:39.453 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips 
+Aug 13 11:54:39.465 GENERAL: working_dir=C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips
+Aug 13 11:54:39.465 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\31658b61-f123-4bdd-810e-22f462eb6498 
+Aug 13 11:54:39.467 GENERAL: working_dir=C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\31658b61-f123-4bdd-810e-22f462eb6498
+Aug 13 11:54:39.467 HYPERVISOR: exec_cmd: vm create R3 2 c7200 
+Aug 13 11:54:39.469 VM: VM R3 created.
+Aug 13 11:54:39.469 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5001 
+Aug 13 11:54:39.469 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:54:39.472 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x608927c0 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/freet/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca02.2258.0000 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm set_ram R3 224 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:54:39.478 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-4T+ 
+Aug 13 11:54:47.429 HYPERVISOR: exec_cmd: nio create_udp udp-e5c65308-b0c1-495e-8ee6-1b5cbc524e11 20010 127.0.0.1 20011 
+Aug 13 11:54:48.404 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-e5c65308-b0c1-495e-8ee6-1b5cbc524e11 
+Aug 13 11:54:48.405 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:54:49.628 HYPERVISOR: exec_cmd: nio create_udp udp-961401a0-30b6-49e3-a65a-9af73ba5a0ba 20020 127.0.0.1 20021 
+Aug 13 11:54:49.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-961401a0-30b6-49e3-a65a-9af73ba5a0ba 
+Aug 13 11:54:49.665 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:55:08.967 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Aug 13 11:55:08.975 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-224.ghost 
+Aug 13 11:55:08.979 HYPERVISOR: exec_cmd: vm get_status R3 
+Aug 13 11:55:08.999 HYPERVISOR: exec_cmd: vm set_config R3 configs\i2_startup-config.cfg 
+Aug 13 11:55:08.999 HYPERVISOR: exec_cmd: vm start R3 
+Aug 13 11:55:39.415 HYPERVISOR: exec_cmd: vm extract_config R3 

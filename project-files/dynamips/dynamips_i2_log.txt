@@ -1,0 +1,55 @@
+Aug 13 11:54:39.805 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 13 11:54:39.806 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50669.
+Aug 13 11:54:40.207 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 13 11:54:40.207 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips 
+Aug 13 11:54:40.207 GENERAL: working_dir=C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips
+Aug 13 11:54:40.207 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\799b410b-28b3-4d04-8ce2-8d8ab2ee9ec4 
+Aug 13 11:54:40.233 GENERAL: working_dir=C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\799b410b-28b3-4d04-8ce2-8d8ab2ee9ec4
+Aug 13 11:54:40.233 HYPERVISOR: exec_cmd: vm create R2 1 c7200 
+Aug 13 11:54:40.233 VM: VM R2 created.
+Aug 13 11:54:40.233 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5000 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x608927c0 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/freet/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca01.16ec.0000 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm set_ram R2 224 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:40.239 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-4T+ 
+Aug 13 11:54:46.296 HYPERVISOR: exec_cmd: nio create_udp udp-162abe6a-75fd-4201-8f09-f17d7a948da9 20004 127.0.0.1 20005 
+Aug 13 11:54:47.278 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-162abe6a-75fd-4201-8f09-f17d7a948da9 
+Aug 13 11:54:47.278 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:47.367 HYPERVISOR: exec_cmd: nio create_udp udp-312b1aea-7fb6-4eb7-8487-1c5230f0ea06 20008 127.0.0.1 20009 
+Aug 13 11:54:47.403 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-312b1aea-7fb6-4eb7-8487-1c5230f0ea06 
+Aug 13 11:54:47.405 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:54:48.479 HYPERVISOR: exec_cmd: nio create_udp udp-f4a0042f-bdb1-4156-a176-05a4c6bb54cf 20014 127.0.0.1 20015 
+Aug 13 11:54:48.501 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-f4a0042f-bdb1-4156-a176-05a4c6bb54cf 
+Aug 13 11:54:48.501 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:55:08.236 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Aug 13 11:55:08.242 VM: VM Ghost created.
+Aug 13 11:55:08.242 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/freet/GNS3/images/IOS/c7200-a3jk9s-mz.124-25g.image 
+Aug 13 11:55:08.242 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 13 11:55:08.242 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-224.ghost 
+Aug 13 11:55:08.242 HYPERVISOR: exec_cmd: vm set_ram Ghost 224 
+Aug 13 11:55:08.242 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 13 11:55:08.252 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 13 11:55:08.252 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 13 11:55:08.704 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 13 11:55:08.706 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 13 11:55:08.931 VM: VM Ghost shutdown.
+Aug 13 11:55:08.931 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Aug 13 11:55:08.941 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 13 11:55:08.941 VM: VM Ghost destroyed.
+Aug 13 11:55:08.953 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 13 11:55:08.957 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\freet\Desktop\topologies\Lab 9 04-Aug-2025\config, rip, s-acl, ssh\project-files\dynamips\c7200-a3jk9s-mz.124-25g.image-224.ghost 
+Aug 13 11:55:08.957 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 13 11:55:08.975 HYPERVISOR: exec_cmd: vm set_config R2 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Aug 13 11:55:08.975 HYPERVISOR: exec_cmd: vm start R2 
+Aug 13 11:55:39.293 HYPERVISOR: exec_cmd: vm extract_config R2 
