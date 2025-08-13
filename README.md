@@ -188,4 +188,4 @@ PC6> ip 192.168.1.12/29 192.168.1.9
 </code></pre>
 
 <hr>
-<p><i>This lab was built and tested in GNS3 version 2.2.x.</i></p>
+<p><i>This lab was built and tested in GNS3 version 2.2.54</i></p>
