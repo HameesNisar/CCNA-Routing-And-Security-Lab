@@ -6,7 +6,8 @@
 <hr>
 
 <h2>2. Network Topology</h2>
-<p><i><img width="1554" height="850" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/503b1928-ac3b-4aa7-94e2-771021ed990b" /></i></p>
+
+<img width="1516" height="785" alt="tptp" src="https://github.com/user-attachments/assets/15cabac0-97c6-4dd2-9010-7f6d7a0d0d17" />
 
 <hr>
 
